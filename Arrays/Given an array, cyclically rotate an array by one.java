@@ -75,3 +75,56 @@ class GFG
 	}
 	 
 }
+
+
+
+
+
+
+
+
+// Method 2
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+class GFG
+ {
+    static Scanner scn = new Scanner(System.in);
+	public static void main (String[] args)
+	{
+	    int test = scn.nextInt();
+	    for(int i = 0; i< test; i++)
+	    {
+	        int size = scn.nextInt();
+	        int arr [] = new int[size];
+	        
+	        for(int j = 0; j< size; j++)
+	        {
+	            arr[j] = scn.nextInt();
+	            
+	           
+	        }
+	       
+	        int x = arr[arr.length-1];
+
+	        
+	        for(int m = arr.length-1; m > 0 ; m--)
+	            arr[m] = arr[m-1];
+	            
+	        arr[0] = x;
+	       
+	        
+	        
+	        
+	        for(int m : arr)
+	        {
+	            System.out.print(m+ " ");
+	        }
+	        System.out.println();
+	        
+	        
+	        
+	    }
+	}
+	 
+}
